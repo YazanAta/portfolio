@@ -8,6 +8,7 @@ import { MyProjects } from 'src/app/models/my-projects.model';
 })
 export class MyProjectsComponent {
     myProjects: MyProjects[] = [
+        /*
         {
             image: 'thequesthub-v2.png',
             title: 'TheQuestHub v2',
@@ -241,6 +242,7 @@ export class MyProjectsComponent {
             ],
             imagePosition: 'object-top',
         },
+        */
     ];
 
     showLimit: number = 6;
