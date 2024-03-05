@@ -10,30 +10,35 @@ export class TechnicalSkillsComponent {
     technicalSkills: TechnicalSkills[] = [
         {
             icon: 'coding',
-            title: 'Coding',
+            title: 'Core Development Skills',
             skills: [
-                'Angular',
-                'Springboot',
-                'Java',
-                'JavaScript',
-                'TypeScript',
                 'HTML5',
                 'CSS',
                 'SCSS',
+                'JavaScript',
+                'TypeScript',
+                'Angular',
                 'RxJS',
+                'Java',
+                'Springboot',
                 'SQL',
-                'C#',
+                'Firebase'
             ],
         },
         {
-            icon: 'global',
-            title: 'Design Language',
-            skills: ['Tailwind', 'Bootstrap'],
+            icon: 'design',
+            title: 'Design & UI/UX',
+            skills: ['Tailwind', 'Bootstrap', 'FontAwesome'],
         },
         {
-            icon: 'android',
-            title: 'Applications',
-            skills: ['VS Code', 'IntelliJ IDEA', 'Git Extensions', ' XAMPP', 'Jira'],
+            icon: 'collaboration',
+            title: 'Productivity & Collaboration Tools',
+            skills: ['Jira', 'Slack'],
+        },
+        {
+            icon: 'tools',
+            title: 'Development Tools & Environment',
+            skills: ['VS Code', 'IntelliJ IDEA', 'Git Extensions', 'npm', 'maven'],
         },
     ];
 }
