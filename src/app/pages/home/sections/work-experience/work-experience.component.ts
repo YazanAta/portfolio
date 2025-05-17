@@ -36,5 +36,18 @@ export class WorkExperienceComponent {
                 'Took on the exciting challenge of implementing a program for FTP, enabling seamless uploading and downloading of files from servers'
             ],
         },
+        {
+            startDate: 'Oct 10, 2024',
+            endDate: 'Current',
+            position: 'Software Developer',
+            company: 'Inspire for Solutions Development',
+            companyWebsite: 'https://inspirejo.com/',
+            jobDescriptions: [
+                'Worked on developing and maintaining enterprise integration applications using IBM App Connect Enterprise (ACE)',
+                'Integrated services with IBM MQ for reliable messaging and asynchronous communication between systems',
+                'Designed and consumed stored procedures in SQL Server to handle complex business logic and data transformations',
+                'Performed effective troubleshooting and debugging across message flows, ESQL logic, and backend interactions',
+            ],
+        },
     ];
 }

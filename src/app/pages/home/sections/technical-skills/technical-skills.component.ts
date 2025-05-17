@@ -21,8 +21,11 @@ export class TechnicalSkillsComponent {
                 'RxJS',
                 'Java',
                 'Springboot',
-                'SQL',
-                'Firebase'
+                'MYSQL',
+                'SQL Server',
+                'Firebase',
+                'IBM App Connect',
+                'IBM MQ'
             ],
         },
         {
