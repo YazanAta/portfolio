@@ -9,8 +9,8 @@ import { TechnicalSkills } from 'src/app/models/technical-skills.model';
 export class TechnicalSkillsComponent {
     technicalSkills: TechnicalSkills[] = [
         {
-            icon: 'coding',
-            title: 'Core Development Skills',
+            icon: 'frontend',
+            title: 'Frontend Development',
             skills: [
                 'HTML5',
                 'CSS',
@@ -19,29 +19,43 @@ export class TechnicalSkillsComponent {
                 'TypeScript',
                 'Angular',
                 'RxJS',
+                'NgRx',
+                'Tailwind',
+                'Bootstrap',
+                'FontAwesome'
+            ],
+        },
+        {
+            icon: 'coding',
+            title: 'Backend Development',
+            skills: [
                 'Java',
-                'Springboot',
-                'MYSQL',
-                'SQL Server',
+                'Spring Boot',
                 'Firebase',
                 'IBM App Connect',
+                'IBM API Connect',
                 'IBM MQ'
             ],
         },
         {
-            icon: 'design',
-            title: 'Design & UI/UX',
-            skills: ['Tailwind', 'Bootstrap', 'FontAwesome'],
+            icon: 'cloud',
+            title: 'Cloud & Platforms',
+            skills: ['Google Cloud Platform (GCP)', 'OpenShift', 'ELK Stack'],
         },
         {
-            icon: 'collaboration',
-            title: 'Productivity & Collaboration Tools',
-            skills: ['Jira', 'Slack'],
+            icon: 'database',
+            title: 'Databases',
+            skills: ['MySQL', 'SQL Server'],
         },
         {
             icon: 'tools',
-            title: 'Development Tools & Environment',
-            skills: ['VS Code', 'IntelliJ IDEA', 'Git Extensions', 'npm', 'maven'],
+            title: 'Development Tools',
+            skills: ['VS Code', 'IntelliJ IDEA', 'Git', 'Git Extensions', 'npm', 'Maven'],
+        },
+        {
+            icon: 'collaboration',
+            title: 'Collaboration Tools',
+            skills: ['Jira', 'Slack'],
         },
     ];
 }

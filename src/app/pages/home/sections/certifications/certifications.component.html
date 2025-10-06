@@ -1,0 +1,19 @@
+<section id="certifications">
+    <div class="container">
+        <div class="flex flex-col mb-12">
+            <div class="flex flex-col items-center">
+                <h1 class="section-title">Certifications <span class="text-primary">& Badges</span></h1>
+                <div class="section-divider items-center after:bg-black before:bg-black"></div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8 items-center">
+            <a class="flex flex-col items-center gap-3 p-4 rounded-lg hover:shadow-md hover-animation"
+                *ngFor="let cert of certifications" [href]="cert.link" target="_blank" rel="noopener">
+                <img src="assets/images/home/certifications/{{ cert.badge }}" alt="{{ cert.name }} badge"
+                    class="h-16 w-16 md:h-20 md:w-20 object-contain" />
+                <span class="text-center text-sm md:text-base font-medium">{{ cert.name }}</span>
+                <span class="text-center text-xs text-secondary">{{ cert.issuer }}</span>
+            </a>
+        </div>
+    </div>
+</section>

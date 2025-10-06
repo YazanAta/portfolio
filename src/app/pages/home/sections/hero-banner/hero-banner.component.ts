@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Certification } from '../../../../models/certification.model';
+import { CertificationsService } from '../../../../shared/services/certifications.service';
 
 @Component({
     selector: 'app-hero-banner',
@@ -6,6 +8,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./hero-banner.component.scss'],
 })
 export class HeroBannerComponent {
+    featuredCertifications: Certification[] = [];
+
+    constructor(private readonly certificationsService: CertificationsService) {
+        this.featuredCertifications = this.certificationsService.getFeatured(4);
+    }
     ngAfterViewInit(): void {
         function counter(id: string, start: number, end: number, duration: number): void {
             let obj: any = document.getElementById(id),
@@ -22,6 +29,6 @@ export class HeroBannerComponent {
                 }, step);
         }
 
-        counter('projectCompleted', 0, 3, 1000);
+        counter('projectCompleted', 0, 7, 2000);
     }
 }
