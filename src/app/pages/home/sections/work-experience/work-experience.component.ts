@@ -10,6 +10,23 @@ import { WorkExperience } from 'src/app/models/work-experience.model';
 export class WorkExperienceComponent {
     workExperience: WorkExperience[] = [
         {
+            startDate: 'Oct 10, 2024',
+            endDate: 'Present',
+            position: 'Software Developer',
+            company: 'Inspire for Solutions Development',
+            companyWebsite: 'https://inspirejo.com/',
+            jobDescriptions: [
+                'Worked as an Integration Developer on enterprise applications for the Work Permits module.',
+                'Developed and maintained integration flows and scheduled tasks for work permit processing and calculations.',
+                'Integrated systems with payment and billing platforms to generate invoices and manage transactions.',
+                'Designed and consumed SQL Server stored procedures to implement complex business logic and data transformations.',
+                'Managed version control using GitLab and deployed applications on OpenShift.',
+                'Worked with IBM MQ for reliable messaging and asynchronous communication between systems.',
+                'Performed troubleshooting and debugging across message flows, backend integrations, and database interactions.',
+                'Applied critical thinking and problem-solving to ensure reliable and efficient system operation.',
+            ],
+        },
+        {
             startDate: 'March 1, 2023',
             endDate: 'February 2, 2024',
             position: 'Web Developer',
@@ -37,23 +54,6 @@ export class WorkExperienceComponent {
                 'Explored File I/O operations, learning how to read from and write to files efficiently',
                 'Explored network protocols like Telnet, Sockets, and FTP, broadening my knowledge of communication methods in the digital Realm',
                 'Took on the exciting challenge of implementing a program for FTP, enabling seamless uploading and downloading of files from servers'
-            ],
-        },
-        {
-            startDate: 'Oct 10, 2024',
-            endDate: 'Current',
-            position: 'Software Developer',
-            company: 'Inspire for Solutions Development',
-            companyWebsite: 'https://inspirejo.com/',
-            jobDescriptions: [
-                'Worked as an Integration Developer on enterprise applications for the Work Permits module.',
-                'Developed and maintained integration flows and scheduled tasks for work permit processing and calculations.',
-                'Integrated systems with payment and billing platforms to generate invoices and manage transactions.',
-                'Designed and consumed SQL Server stored procedures to implement complex business logic and data transformations.',
-                'Managed version control using GitLab and deployed applications on OpenShift.',
-                'Worked with IBM MQ for reliable messaging and asynchronous communication between systems.',
-                'Performed troubleshooting and debugging across message flows, backend integrations, and database interactions.',
-                'Applied critical thinking and problem-solving to ensure reliable and efficient system operation.',
             ],
         },
     ];
