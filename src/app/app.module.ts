@@ -1,7 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -33,6 +37,13 @@ import { SidebarComponent } from './shared/header/sidebar/sidebar.component';
     ],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, AppRoutingModule, CommonModule],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        CommonModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideAnalytics(() => getAnalytics()),
+        provideFirestore(() => getFirestore())
+    ],
 })
 export class AppModule { }
